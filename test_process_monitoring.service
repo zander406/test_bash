@@ -1,0 +1,11 @@
+[Unit]
+Description=Process Monitor Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/test_monitoring_process.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target 

@@ -1,0 +1,10 @@
+[Unit]
+Description=Process Monitor Timer
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+Unit=test_process_monitoring.service
+
+[Install]
+WantedBy=timers.target 
